@@ -1,0 +1,17 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-07-19 14:07 IST
+Nmap scan report for a23-59-175-120.deploy.static.akamaitechnologies.com (23.59.175.120)
+Host is up (0.080s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+
+Nmap done: 1 IP address (1 host up) scanned in 1171.05 seconds

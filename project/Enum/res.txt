@@ -1,0 +1,8 @@
+# Nmap 7.94SVN scan initiated Fri Jul 19 14:05:33 2024 as: nmap -sU -p 80 --script=snmp-brute -o res.txt 23.59.175.120
+Nmap scan report for a23-59-175-120.deploy.static.akamaitechnologies.com (23.59.175.120)
+Host is up (0.041s latency).
+
+PORT   STATE         SERVICE
+80/udp open|filtered http
+
+# Nmap done at Fri Jul 19 14:05:34 2024 -- 1 IP address (1 host up) scanned in 1.06 seconds

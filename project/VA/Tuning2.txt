@@ -1,0 +1,61 @@
+- Nikto v2.5.0/
++ Target Host: www.kohls.com
++ Target Port: 443
++ GET /: Retrieved x-served-by header: cache-iad-kiad7000102-IAD.
++ GET /: Server may leak inodes via ETags, header found with file /, inode: W/41664, size: 61d9291c2ba80, mtime: gzip. See: CVE-2003-1418: 
++ GET /: Fastly CDN was identified by the x-timer header. See: https://www.fastly.com/: 
++ GET /: Uncommon header 'x-served-by' found, with contents: cache-iad-kiad7000102-IAD.
++ GET /: Uncommon header 'x-vhost' found, with contents: publish.
++ GET /: Uncommon header 'x-origin-ttl' found, with multiple values: (Sat, 20 Jul 2024 04:59:59 GMT,Sat, 20 Jul 2024 04:59:59 GMT,Sat, 20 Jul 2024 04:59:59 GMT,Sat, 20 Jul 2024 04:59:59 GMT,Sat, 20 Jul 2024 04:59:59 GMT,).
++ GET /: Uncommon header 'server-timing' found, with multiple values: (edge; dur=1,cdn-cache; desc=HIT,ak_p; desc="1721378919062_400021446_303173461_92_24375_46_45_-";dur=1,).
++ GET /: Uncommon header 'x-origin-cc' found, with multiple values: (,,,,,).
++ GET /: Uncommon header 'cmshost' found, with contents: aem.
++ GET /: Uncommon header 'x-akamai-transformed' found, with contents: 9 - 0 pmb=mTOE,2mRUM,3.
++ GET /: Uncommon header 'esi_status' found, with contents: ENABLED.
++ GET /: Cookie AKA_GEO created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_HP2Redesign created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_HPTest created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_EXP created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_SEARCH created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_PIQ created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_WALLET created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_ACM created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_CDP2 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_STP created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_PDP2 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_HP2 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_CNC2 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV6 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV8 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV9 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV4 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV5 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV3 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie AKA_RV2 created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie _abck created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /: Cookie bm_sz created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies: 
++ GET /Gvqyq2Hc.settings: Uncommon header 'x-reference-error' found, with contents: 11.1fc21cb8.1721378920.9b6e7d7.
++ GET /Gvqyq2Hc.settings: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
++ GET : Server banner changed from 'AkamaiGHost' to 'AkamaiNetStorage'.
++ GET /robots.txt: Entry '/bvreviews/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/feature/homepage2.jsp' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/search/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*?searchTerm=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/search.jsp' is returned a non-forbidden or redirect HTTP code (). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*&WS=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*?S=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/product/prd-5132720/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/product/prd-5193422/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/pickuppass/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/product_videos/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*&S=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*?WS=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/ecom/PrintPass/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*&sortfilter=true/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/*&searchTerm=/' is returned a non-forbidden or redirect HTTP code (503). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: Entry '/feature/departments.jsp' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /content/spotlight/: Retrieved access-control-allow-origin header: *.
++ GET /robots.txt: Entry '/content/spotlight/' is returned a non-forbidden or redirect HTTP code (200). See: https://portswigger.net/kb/issues/00600600_robots-txt-file: 
++ GET /robots.txt: contains 25 entries which should be manually viewed. See: https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt: 
++ GET /: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/: 
